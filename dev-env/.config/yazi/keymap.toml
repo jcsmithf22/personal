@@ -1,0 +1,4 @@
+[manager]
+prepend_keymap = [
+  { on = "<C-s>", run = 'shell --block tmux-sessionizer', desc = "tmux-sessionizer" },
+]

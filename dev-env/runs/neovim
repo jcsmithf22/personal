@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# clone directory
+git clone git@github.com:neovim/neovim.git $HOME/personal/neovim
+
+# change directory
+cd $HOME/personal/neovim
+
+# select version
+git fetch
+git checkout stable
+
+# install dependencies
+brew install ninja cmake gettext curl
+
+# make
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+
+# install
+sudo make install

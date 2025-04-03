@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+setup_space() {
+  idx="$1"
+  name="$2"
+
+  echo "setup space $idx : $name"
+
+  space=$(yabai -m query --spaces --space "$idx" 2>/dev/null)
+  if [[ -z "$space" ]]; then
+    yabai -m space --create
+  fi
+
+  yabai -m space "$idx" --label "$name"
+}
+
+setup_space 1 code
+setup_space 2 web
+setup_space 3 media
+setup_space 4 social
+setup_space 5 other

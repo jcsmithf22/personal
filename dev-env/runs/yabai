@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# install script
+brew install koekeishiya/formulae/yabai --HEAD
+codesign -fs 'yabai-cert' $(brew --prefix yabai)/bin/yabai

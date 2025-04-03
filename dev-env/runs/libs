@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# fzf
+brew install fzf

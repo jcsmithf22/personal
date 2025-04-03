@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# install script
+brew tap FelixKratz/formulae
+brew install sketchybar
+
+# copy default configuration
+directory=$HOME/personal/dev-env/.config/sketchybar
+mkdir -p "$directory/plugins"
+cp $(brew --prefix)/share/sketchybar/examples/sketchybarrc "$directory/sketchybarrc"
+cp -r $(brew --prefix)/share/sketchybar/examples/plugins/ "$directory/plugins/"
+
+# install default font
+brew install --cask font-hack-nerd-font
+
+# run on startup
+brew services start sketchybar

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# install script
+curl https://mise.run | sh
+
+# activate
+eval "$(~/.local/bin/mise activate zsh)"
+
+echo 'eval "$(~/.local/bin/mise activate zsh)"' >>~/.zshrc
+
+# install
+mise use --global node@lts
+mise use --global go@latest
+mise use --global ruby@latest
+mise use --global zig@ref:master
+mise use --global bun@latest

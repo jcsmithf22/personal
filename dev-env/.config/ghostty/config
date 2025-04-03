@@ -1,0 +1,16 @@
+theme = carbonfox
+
+cursor-style = block
+shell-integration-features = no-cursor
+background-opacity = 0.95
+background-blur-radius = 50
+adjust-cell-height = 20%
+adjust-cursor-height = 20%
+mouse-hide-while-typing = true
+macos-titlebar-style = hidden
+confirm-close-surface = false
+window-padding-balance = true
+
+font-family = MonoLisa
+
+quit-after-last-window-closed=true
