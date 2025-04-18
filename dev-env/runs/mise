@@ -14,3 +14,5 @@ mise use --global go@latest
 mise use --global ruby@latest
 mise use --global zig@ref:master
 mise use --global bun@latest
+mise use --global deno@latest
+mise use --global uv@latest
